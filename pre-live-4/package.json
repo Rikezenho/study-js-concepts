@@ -1,0 +1,20 @@
+{
+  "name": "pre-live-4",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx mocha --parallel --exit test/",
+    "test:dev": "npx mocha --exit -w test/",
+    "test:cov": "npx nyc --reporter=html --reporter=text --check-coverage --instrument mocha test/",
+    "start": "node src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mocha": "^8.3.0",
+    "nyc": "^15.1.0",
+    "sinon": "^9.2.4"
+  }
+}
